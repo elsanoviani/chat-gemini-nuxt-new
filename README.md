@@ -17,17 +17,18 @@ https://legendary-hotteok-d60c2e.netlify.app/
 ## ⚙️ Setup & Development
 
 ### 1. Clone repository
+```
 git clone https://github.com/elsanoviani/chat-gemini-nuxt-new.git
 
 cd chat-gemini-nuxt-new
-
+```
 
 ### 2. Install dependencies
 
-
+```
 npm install
 
-
+```
 ### 3. Buat file `.env`
 ```console
   cp .env.example .env
@@ -35,7 +36,7 @@ npm install
 
 ### 4. Setup database
 Jalankan migrasi Prisma:
-
+```
 
 npx prisma migrate dev --name init
 
@@ -52,7 +53,7 @@ npx prisma generate
 npm run dev
 
 Buka [http://localhost:3000](http://localhost:3000)
-
+```
 ---
 
 ## 📦 Project Structure
@@ -70,7 +71,7 @@ Buka [http://localhost:3000](http://localhost:3000)
 ---
 
 ## 🛠️ Useful Commands
-
+```
 Run dev server
 
 npm run dev
@@ -86,5 +87,5 @@ npm run preview
 Open Prisma Studio
 
 npx prisma studio
-
+```
 ---
