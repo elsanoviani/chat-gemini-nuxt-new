@@ -2,7 +2,7 @@
 
 A simple chat application with multiple chat sessions and messages.  
 Built using **Nuxt 3**, **Prisma**, **PostgreSQL**, and **Logto** for authentication.
-
+Url aplikasi: https://legendary-hotteok-d60c2e.netlify.app/
 ---
 
 ## 🚀 Tech Stack
@@ -89,20 +89,5 @@ npm run preview
 Open Prisma Studio
 
 npx prisma studio
-
-
----
-
-## 🌐 Deployment
-
-### Deploy ke Vercel
-1. Push project ke GitHub
-2. Import ke [Vercel](https://vercel.com)
-3. Tambahkan environment variables di Vercel (`DATABASE_URL`, `LOGTO_*`)
-4. Jalankan migrasi di DB production:
-
-
-npx prisma migrate deploy
-
 
 ---
