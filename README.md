@@ -2,9 +2,10 @@
 
 A simple chat application with multiple chat sessions and messages.  
 Built using **Nuxt 3**, **Prisma**, **PostgreSQL**, and **Logto** for authentication.
+---
+### URL Aplikasi
 Url aplikasi: https://legendary-hotteok-d60c2e.netlify.app/
 ---
-
 ## 🚀 Tech Stack
 - Nuxt 3 (frontend + backend)
 - Prisma (ORM)
