@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "target": "esnext",      // jangan es2019
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true
+  }
+}
