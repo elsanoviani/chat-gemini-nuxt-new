@@ -1,76 +1,108 @@
-# Nuxt Minimal Starter
+# Chat App – Nuxt 3 + Prisma + PostgreSQL
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A simple chat application with multiple chat sessions and messages.  
+Built using **Nuxt 3**, **Prisma**, **PostgreSQL**, and **Logto** for authentication.
 
-## Setup
+---
 
-Make sure to install dependencies:
+## 🚀 Tech Stack
+- Nuxt 3 (frontend + backend)
+- Prisma (ORM)
+- PostgreSQL (database, bisa pakai lokal atau Supabase)
+- Logto (authentication)
 
-```bash
-# npm
+---
+
+## ⚙️ Setup & Development
+
+### 1. Clone repository
+git clone https://github.com/yourusername/chat-app.git
+
+cd chat-app
+
+
+### 2. Install dependencies
+
+
 npm install
 
-# pnpm
-pnpm install
 
-# yarn
-yarn install
+### 3. Buat file `.env`
+Isi dengan konfigurasi berikut:
+DATABASE_URL="postgresql://postgres:postgres@localhost:5432/chatdb"
+LOGTO_ENDPOINT="https://your-logto-domain
+"
+LOGTO_APP_ID="your-logto-app-id"
+LOGTO_APP_SECRET="your-logto-app-secret"
 
-# bun
-bun install
-```
 
-## Development Server
+### 4. Setup database
+Jalankan migrasi Prisma:
 
-Start the development server on `http://localhost:3000`:
 
-```bash
-# npm
+npx prisma migrate dev --name init
+
+
+Generate Prisma client:
+
+
+npx prisma generate
+
+
+### 5. Jalankan server
+
+
 npm run dev
 
-# pnpm
-pnpm dev
+Buka [http://localhost:3000](http://localhost:3000)
 
-# yarn
-yarn dev
+---
 
-# bun
-bun run dev
-```
+## 📦 Project Structure
 
-## Production
 
-Build the application for production:
+.
+├── server/api/ # API routes (sessions, messages)
+├── prisma/schema.prisma # Prisma schema
+├── components/ # Vue components
+├── pages/ # Nuxt pages
+├── package.json
+└── README.md
 
-```bash
-# npm
+
+---
+
+## 🛠️ Useful Commands
+
+Run dev server
+
+npm run dev
+
+Build production
+
 npm run build
 
-# pnpm
-pnpm build
+Preview production build
 
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
 npm run preview
 
-# pnpm
-pnpm preview
+Open Prisma Studio
 
-# yarn
-yarn preview
+npx prisma studio
 
-# bun
-bun run preview
-```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
-# chat-gemini-nuxt-new
+---
+
+## 🌐 Deployment
+
+### Deploy ke Vercel
+1. Push project ke GitHub
+2. Import ke [Vercel](https://vercel.com)
+3. Tambahkan environment variables di Vercel (`DATABASE_URL`, `LOGTO_*`)
+4. Jalankan migrasi di DB production:
+
+
+npx prisma migrate deploy
+
+
+---
