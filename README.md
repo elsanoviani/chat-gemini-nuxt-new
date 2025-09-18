@@ -4,7 +4,7 @@ A simple chat application with multiple chat sessions and messages.
 Built using **Nuxt 3**, **Prisma**, **PostgreSQL**, and **Logto** for authentication.
 ---
 ### URL Aplikasi
-Url aplikasi: https://legendary-hotteok-d60c2e.netlify.app/
+https://legendary-hotteok-d60c2e.netlify.app/
 ---
 ## 🚀 Tech Stack
 - Nuxt 3 (frontend + backend)
@@ -17,9 +17,9 @@ Url aplikasi: https://legendary-hotteok-d60c2e.netlify.app/
 ## ⚙️ Setup & Development
 
 ### 1. Clone repository
-git clone https://github.com/yourusername/chat-app.git
+git clone https://github.com/elsanoviani/chat-gemini-nuxt-new.git
 
-cd chat-app
+cd chat-gemini-nuxt-new
 
 
 ### 2. Install dependencies
@@ -29,13 +29,9 @@ npm install
 
 
 ### 3. Buat file `.env`
-Isi dengan konfigurasi berikut:
-DATABASE_URL="postgresql://postgres:postgres@localhost:5432/chatdb"
-LOGTO_ENDPOINT="https://your-logto-domain
-"
-LOGTO_APP_ID="your-logto-app-id"
-LOGTO_APP_SECRET="your-logto-app-secret"
-
+```console
+  cp .env.example .env
+```
 
 ### 4. Setup database
 Jalankan migrasi Prisma:
@@ -61,7 +57,7 @@ Buka [http://localhost:3000](http://localhost:3000)
 
 ## 📦 Project Structure
 
-
+```
 .
 ├── server/api/ # API routes (sessions, messages)
 ├── prisma/schema.prisma # Prisma schema
@@ -69,7 +65,7 @@ Buka [http://localhost:3000](http://localhost:3000)
 ├── pages/ # Nuxt pages
 ├── package.json
 └── README.md
-
+```
 
 ---
 
